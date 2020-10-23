@@ -1,64 +1,48 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Project: Business Intelligence with Tableau
+# Project: Business Intelligence with Tableau: Hearthstone Qualifiers to Madrid, a Results analysis
 
 ## Overview
 
-The goal of this project is for you to practice what you have learned in the Business Intelligence chapter of this program. For this project, you will choose a data set, explore the it using Tableau, and put together a Story for presentation showing the insights you have derived from the data. You should demonstrate your proficiency using Tableau and the concepts you have learned throughout the chapter. The workbook should be saved to Tableau Public and a link to the workbook should be provided.
-
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
+This project tries to show in a clear and explainatory way all the results found in previous project, like data extraction and statistical analysis and show them in a direct and explainatory fashion. 
 
 ---
 
-## Technical Requirements
+## Steps I followed to perform this project
 
-The technical requirements for this project are as follows:
+### 1- Getting your data
+I decided to use the same data that I used before for previous projects since I was familiar with the dataset. 
 
-* You must construct a Tableau Story consisting of at least 5 story points for the data set you have chosen.
-* You must use Story features such as captions and annotations.
-* You must demonstrate all the concepts we covered in the chapter (sorting, filtering, different visualizations types, aggregations, etc.).
-* Your Tableau workbook consisting of at least 5 visualizations and 1 Story should be saved to Tableau Public.
-* You should create a Github repo for this project, and your data should be saved to that repo in a folder named data.
-* You should also include a README.md file that describes the steps you took, your thought process as you built your visualizations and Story in Tableau, and a link to your workbook on Tableau Public.
+### 2- Analyzing the shape of your data
 
-## Necessary Deliverables
+I realized that the way my data was structured didn't allow me to many of the graphic representations I wanted to use, so I had to reshape some of the data using melt functions
+and then merging the results together. 
 
-The following deliverables should be pushed to your Github repo for this chapter.
+### 3- Importing data into Tableau 
 
-* **A Tableau workbook uploaded to Tableau Public** that contains the visualizations and Story you created from your data set.
-* **An data folder** containing the data set you used for your project.
-* **A ``README.md`` file** containing a detailed explanation of your approach and code for constructing visualizations and organizing them into a Story as well as your results, obstacles encountered, lessons learned, and a link to your completed Tableau workbook.
+Once I imported the data into Tableau I had to change to comma separated values the CSV and set the language to English so it could parse correctly the dates.
 
-## Suggested Ways to Get Started
+### 4- Creating the graphs
 
-* **Find a data set to process** - a great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets) and [Kaggle Data Sets](https://www.kaggle.com/datasets).
-* **Explore the data set** and come up with a variety of visualizations that you can potentially include in your story.
-* **Break the project down into different steps** - identify the entities/dimensions in your data set, explore them each individually, and then progress to analyzing different combinations of them.
-* **Use the tools in your tool kit** - the concepts and methods you have learned in the business intelligence chapter as well as some of the things you've learned in previous chapters. This is a great way to start tying everything you've learned together!
-* **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
+For the graphs I knew I wanted to tell the story on how popularity and winrate trends affect Hearthstone tournaments, as well as new deck discoveries and improvements over time so I started creating a summary of the decks most played grouping by class.
+Then I though it's not only important to see which were the most played classes but to analyze the trends. So 2 new graphs included to see how the played rate of each class got affected across time.
 
-## Useful Resources
+Then I tacleked the winrate graphs, which sadly I couldn't find another suitable graph representation to do them. 
 
-* [Tableau Getting Started Tutorial](https://onlinehelp.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.html)
-* [Tableau Training Videos](https://www.tableau.com/learn/training)
-* [Tableau Learning Library](https://onlinehelp.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-next.html)
+I adjusted the linear regressions of the graphs to be polynomic so the curve adjusted better to the data.
 
-## Project Feedback + Evaluation
+After this I realized first of all I wanted to do some summary statistics in a simple chart visualization and a calendar form to show how the tournaments were distributed over time.
 
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
+### 5- Creating the story and adding comments
 
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
+I generated a new story and added some comments to explain better some of the observation of the graphs included. 
 
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
+### 6- Possible improvements&Lessons learnt
 
-* __Total__: Your instructors will give you a total score on your project between:
+Maybe data could be structured in some other way so I could had use another form of graphs to make it less monotone. 
 
-    **Score**|**Expectations**
-    -----|-----
-    0|Does not meet expectations
-    1|Meets expectactions, good job!
-    2|Exceeds expectations, you wonderful creature, you!
+I should have collected more data on players so I could show & calculate how many players calculated using the 4 top 16º rule.
 
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
+Should study more tableau to see more automations and cool features to make the dashboards more look more dynamic.
+
+The data should have more ways to filter and analyze in more dimensions.
