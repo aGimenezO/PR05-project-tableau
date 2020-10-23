@@ -8,7 +8,8 @@ This project tries to show in a clear and explainatory way all the results found
 
 ---
 
-Link to the presentation in Tableau public : https://public.tableau.com/profile/alexander.gimenez#!/vizhome/HearthstoneMastersQualifiersResultsAnalysis/HearthstoneMadridQualifiersAtournamentresultsanalysis
+Link to the presentation in Tableau public : 
+[a link](https://public.tableau.com/profile/alexander.gimenez#!/vizhome/HearthstoneMastersQualifiersResultsAnalysis/HearthstoneMadridQualifiersAtournamentresultsanalysis)
 
 ## Steps I followed to perform this project
 
